@@ -1,0 +1,7 @@
+
+AddHandler x-httpd-php .html .htm
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ccdcks\.com [NC]
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://ccdcks.com/$1 [R,L]
