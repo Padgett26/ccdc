@@ -7,6 +7,8 @@ $db = db_ccdc();
 
 include "cgi-bin/functions.php";
 
+$domain = "ccdcks.com";
+
 $salt1 = "mk&*";
 $salt2 = "^&gh";
 
