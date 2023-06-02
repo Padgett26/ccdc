@@ -102,7 +102,7 @@ if ($loggedin == "1") {
                             $tmpFile) : null;
                     if ($width != null && $height != null) {
                         $imageType = getPicType($_FILES["image"]["type"]);
-                        processPic("$domain/image/business",
+                        processPic("image/business",
                                 $time . "." . $imageType, $tmpFile, 800, 150);
                         $pstmt1 = $db->prepare(
                                 "UPDATE business SET picture=?, picExt=? WHERE id=?");
@@ -142,7 +142,7 @@ if ($loggedin == "1") {
                             $tmpFile) : null;
                     if ($width != null && $height != null) {
                         $imageType = getPicType($_FILES["image"]["type"]);
-                        processPic("$domain/image/business",
+                        processPic("image/business",
                                 $time . "." . $imageType, $tmpFile, 800, 150);
                         $pstmt2 = $db->prepare(
                                 "UPDATE business SET picture=?, picExt=? WHERE id=?");

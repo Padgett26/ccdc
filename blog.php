@@ -41,7 +41,7 @@ if ($loggedin == "1") {
             $picname1 = filter_input(INPUT_POST, 'picname1',
                     FILTER_SANITIZE_NUMBER_INT);
             $imageType = getPicType($_FILES["image1"]["type"]);
-            processPic("$domain/image/dirnotes", $picname1 . "." . $imageType,
+            processPic("image/dirnotes", $picname1 . "." . $imageType,
                     $tmpFile, 400, 150);
         }
     }
@@ -56,7 +56,7 @@ if ($loggedin == "1") {
             $picname2 = filter_input(INPUT_POST, 'picname2',
                     FILTER_SANITIZE_NUMBER_INT);
             $imageType = getPicType($_FILES["image2"]["type"]);
-            processPic("$domain/image/dirnotes", $picname2 . "." . $imageType,
+            processPic("image/dirnotes", $picname2 . "." . $imageType,
                     $tmpFile, 400, 150);
         }
     }

@@ -56,7 +56,7 @@ if ($loggedin == "1") {
                     FILTER_SANITIZE_NUMBER_INT);
             $imageType = getPicType($_FILES["image1"]["type"]);
             processPic("explore", $picname1, "400", "400", $tmpFile, $imageType);
-            processPic("$domain/image/explore", $picname1 . "." . $imageType,
+            processPic("image/explore", $picname1 . "." . $imageType,
                     $tmpFile, 400, 150);
         }
     }
@@ -71,7 +71,7 @@ if ($loggedin == "1") {
             $picname2 = filter_input(INPUT_POST, 'picname2',
                     FILTER_SANITIZE_NUMBER_INT);
             $imageType = getPicType($_FILES["image2"]["type"]);
-            processPic("$domain/image/explore", $picname2 . "." . $imageType,
+            processPic("image/explore", $picname2 . "." . $imageType,
                     $tmpFile, 400, 150);
         }
     }
